@@ -31,7 +31,7 @@ production stylesheet in assets/built/screen.css
 :root {
 
     /* Colours */
-    --color-green: #a4d037;
+    --color-green: #a3c059;
     --color-yellow: #fecd35;
     --color-red: #f05230;
     --color-darkgrey: #15171A;
@@ -402,7 +402,7 @@ production stylesheet in assets/built/screen.css
 /* ---------------------------------------------------------- */
 
 .gh-head-brand {
-    display: flex;
+    display: block;
     align-items: center;
     height: 40px;
     word-break: break-all;
