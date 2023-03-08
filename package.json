@@ -1,14 +1,10 @@
 {
     "name": "diani",
-    "version": "5.4.7",
+    "version": "0.1.0",
     "engines": {
         "ghost": ">=5.0.0"
     },
     "license": "MIT",
-    "screenshots": {
-        "desktop": "assets/screenshot-desktop.jpg",
-        "mobile": "assets/screenshot-mobile.jpg"
-    },
     "scripts": {
         "dev": "gulp",
         "zip": "gulp zip",
@@ -37,6 +33,7 @@
         "https://github.com/TattolTravel/diani/graphs/contributors"
     ],
     "devDependencies": {
+        "@tailwindcss/typography": "^0.5.9",
         "@tryghost/release-utils": "0.8.1",
         "autoprefixer": "10.4.7",
         "beeper": "2.1.0",
@@ -167,5 +164,8 @@
         "extends": [
             "@tryghost:theme"
         ]
+    },
+    "dependencies": {
+        "tailwindcss": "^3.2.7"
     }
 }

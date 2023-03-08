@@ -3,6 +3,7 @@ const pump = require('pump');
 const path = require('path');
 const releaseUtils = require('@tryghost/release-utils');
 const inquirer = require('inquirer');
+var tailwindcss = require('tailwindcss');
 
 // gulp plugins and utils
 const livereload = require('gulp-livereload');
@@ -42,6 +43,7 @@ function hbs(done) {
         src(['*.hbs', 'partials/**/*.hbs']),
         livereload()
     ], handleError(done));
+    css(done);
 }
 
 function css(done) {
@@ -50,6 +52,7 @@ function css(done) {
         postcss([
             easyimport,
             colorFunction(),
+            tailwindcss(),
             autoprefixer(),
             cssnano()
         ]),
